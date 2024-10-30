@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-color:  hsl(0, 100%, 74%);
+    display: grid;
+    place-content: center;
+    align-items: center;
+    place-items: center;
+    min-height: 100vh;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 200px;
+    
+}
+.box1 h1{
+    margin-bottom:10px ;
+    font-size: 41px;
+}
+.box1{
+    color: white;
+    padding: 80px;
+
+
+}
+.conteiner2{
+    background-color: white;
+    width: 350px;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+.btn1 button{
+    margin-bottom: 17px;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    padding: 18px 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 7px 0  rgba(72, 71, 71, 0.558);
+}
+input{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 80px;
+    margin-top: 10px;
+    border:2px solid gray;
+    border-radius: 5px;
+}
+
+.box2 p{
+    text-align: center;
+    font-size: 11px;
+    margin-top: 6px;
+    color: gray;
+    padding-bottom: 15px;
+}
+.box2 span{
+    color: red;
+    padding-bottom: 15px;
+}
+.btn2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    padding: 12px 82px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+@media screen and (max-width:450px) {
+    body{
+        display: grid;
+        place-content: center;
+        place-items: center;
+        min-height: 100vh;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    body img{
+        background-image: none;
+        content: url(images/bg-intro-mobile.png);
+        width: 100%;
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+        padding: 12px 90px;
+        margin-top: 10px;
+        border:2px solid gray;
+        border-radius: 5px;
+    }
+    .btn2{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-color: hsl(154, 59%, 51%);
+        padding: 12px 90px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    
+}
